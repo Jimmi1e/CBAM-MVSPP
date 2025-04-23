@@ -1,6 +1,6 @@
 {
     "name": "DINOv2",
-    "n_gpu": 1,
+    "n_gpu": 2,
     "fp16": true,
     "arch": {
         "bf16": true,
@@ -173,7 +173,7 @@
                 "height": 1152,
                 "width": 1536,
                 "shuffle": true,
-                "batch_size": 1,
+                "batch_size": 2,
                 "random_crop": true,
                 "consist_crop": false,
                 "num_workers": 4,
