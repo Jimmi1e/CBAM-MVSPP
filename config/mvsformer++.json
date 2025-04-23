@@ -133,7 +133,7 @@
             "type": "DTULoader",
             "args": {
                 "data_set_type": "multi_scale",
-                "datapath": "/nfs/speed-scratch/ch_yuhan/dtuTrainingData/dtu/",
+                "datapath": "/home/yuhang12/scratch/dtuTraining/dtu/",
                 "train_data_list": "lists/dtu/trainval.txt",
                 "val_data_list": "lists/dtu/test.txt",
                 "mode": "train",
