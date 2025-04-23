@@ -24,9 +24,9 @@ module load opencv/4.9.0
 # Define environment name and path 
 ENV_NAME="project_envpp"
 
-ENV_DIR=/home/$USER/projects/def-xinxin/$USER/"
+ENV_DIR="/home/$USER/projects/def-xinxin/$USER/"
 
-ENV_PATH = "$ENV_DIR/$ENV_NAME"
+ENV_PATH="$ENV_DIR/$ENV_NAME"
 
 # Check if the environment exists
 if [ -d "$ENV_PATH" ]; then
@@ -48,7 +48,6 @@ echo "Environment summary..."
 echo "============================"
 pip list
 
-sleep 30
 
 # Training on DTU's data set
 
