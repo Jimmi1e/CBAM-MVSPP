@@ -17,7 +17,7 @@
 module load python/3.11
 module load StdEnv/2023
 module load gcc/12.3
-mudule load cuda/12.2
+module load cuda/12.2
 module load opencv/4.9.0
 
 
@@ -54,6 +54,9 @@ sleep 30
 
 echo "Running Training processing..."
 echo "================================================"
-python train.py --config config/mvsformer++.json --exp_name MVSFormer++ --DDP
+python train.py --config config/mvsformer++.json --exp_name MVSFormer++ --DDP || {
+    echo "Error: Training failed"
+    exit 1
+}
 deactivate
 exit 0
